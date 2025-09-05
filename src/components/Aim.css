@@ -1,0 +1,32 @@
+.aim {
+  padding: 30px 50px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.aim h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.reasons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+.why-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.09);
+  text-align: center;
+}

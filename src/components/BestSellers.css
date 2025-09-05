@@ -1,0 +1,81 @@
+/* ===== Best Selling Section ===== */
+.best-selling {
+  padding: 80px 60px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.best-selling h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+/* Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+/* Card */
+.product-grid .product-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+/* Image */
+.product-grid img {
+  width: 100%;
+  height: 200px;           /* keeps uniform card size */
+  object-fit: cover;       /* crops nicely */
+  border-radius: 10px 10px 0 0;
+  display: block;
+}
+
+/* Product Title */
+.product-grid h3 {
+  font-size: 1.15rem;
+  margin: 14px 0 6px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Category (if you display it) */
+.product-grid .category {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+/* Price */
+.product-grid .price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+  margin-top: 6px;
+}
+
+.btn {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .best-selling {
+    padding: 60px 20px;
+  }
+}

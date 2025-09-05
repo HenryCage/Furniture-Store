@@ -1,0 +1,129 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background: url('./assets/homepage-image.png') center/cover no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* adjust transparency (#00000009 is too light) */
+  z-index: 1;
+}
+
+/* content stays above overlay */
+.hero .content {
+  position: relative;
+  z-index: 2;
+}
+
+.overlay {
+  
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.content {
+  max-width: 700px;
+  z-index: 2;
+  position: relative;
+}
+
+.content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 50px;
+  overflow: hidden;
+  background: white;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.search-bar button {
+  background: orange;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+
+.navbar {
+    background-color: #00000043;
+  position: absolute; /* sits over hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  z-index: 10;
+  box-sizing: border-box; /* important: prevents extra width */
+}
+
+.logo {
+    color: white;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    /* margin: 0; */
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Aims styling*/
