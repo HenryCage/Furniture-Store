@@ -1,21 +1,25 @@
 import { Link } from "react-router-dom"
 import { BsCart4 } from "react-icons/bs";
+import './Navbar.css'
 
-const Navbar = () => {
-    return (
-        <nav className="navbar">
-            <div className="logo"><Link to='/'>F.Store</Link></div>
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <div className="logo"><Link to='/'>Panto</Link></div>
 
-            <div className="nav-links">
-                <Link to='/shop'>Shop</Link>
-                <Link to='/about'>About Us</Link>
-                <Link to='#contact' className="text-blue-600 underline">Contact</Link>
-            </div>
-            <div className="cart">
-                <BsCart4 size={24} color="white"/>
-            </div>
-        </nav>
-    )
+      {/* Links */}
+      <ul className="nav-links">
+        <li><a href="/shop">Furnitures</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div className="cart">
+        <BsCart4 size={22} color="white" />
+      </div>
+    </nav>
+  );
 }
+
 
 export default Navbar

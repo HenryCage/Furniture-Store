@@ -1,0 +1,27 @@
+.navbar {
+  background: #000000cc;
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
