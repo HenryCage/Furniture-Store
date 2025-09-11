@@ -8,6 +8,7 @@ import AboutUs from "./Pages/About";
 import Contact from "./Pages/Contact";
 import './App.css'
 import Footer from "./components/Footer";
+import Cart from "./Pages/Cart";
 
 
 export default function App() {
@@ -16,8 +17,10 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path= '/' element={<Home />} />
-        <Route path= '/shop' element={<Shop />} />
-        <Route path= '/shop/:id' element={<ProductDetails />} />
+        <Route path= '/products' element={<Shop />} />
+        <Route path= '/about' element={<AboutUs />} />
+        <Route path= '/products/:id' element={<ProductDetails />} />
+        <Route path= '/cart' element={<Cart />} />
       </Routes>
       <Footer />
     </Router>

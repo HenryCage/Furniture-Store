@@ -39,3 +39,8 @@
   font-weight: 600;
   color: #333;
 }
+
+.product-grids a {
+  text-decoration: none;
+  color: inherit;
+}
