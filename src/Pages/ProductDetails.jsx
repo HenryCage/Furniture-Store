@@ -53,7 +53,7 @@ const ProductDetails = () => {
         <img src={product.image_path} alt={product.name} />
       </div>
       <div className="product-info">
-        <h1>{product.namee}</h1>
+        <h1>{product.name}</h1>
         <p>{product.description}</p>
         <h2>${Number(product.price).toLocaleString()}</h2>
 
