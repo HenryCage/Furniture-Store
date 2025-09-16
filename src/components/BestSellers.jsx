@@ -40,7 +40,7 @@ const BestSelling = () => {
             <img src={product.image_path} alt={product.name} />
             <h3>{product.name}</h3>
             <p>${product.price}</p>
-            <Link to={`/products/${product.id}`} className="btn">View Details</Link>
+            <Link to={`/products/${product.sku}`} className="btn">View Details</Link>
           </div>
         ))}
       </div>

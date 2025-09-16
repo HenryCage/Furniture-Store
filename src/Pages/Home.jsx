@@ -1,6 +1,6 @@
-import Hero from "../../components/Hero";
-import Aim from "../../components/Aim";
-import BestSeller from "../../components/BestSellers";
+import Hero from "../components/Hero";
+import Aim from "../components/Aim";
+import BestSeller from "../components/BestSellers";
 
 
 const Home = () => {
