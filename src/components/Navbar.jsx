@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo"><Link to='/'>Panto</Link></div>
+      <div className="logo"><Link to='/'>Super Store</Link></div>
 
       <ul className="nav-links">
         <li><Link to="/products">Furnitures</Link></li>

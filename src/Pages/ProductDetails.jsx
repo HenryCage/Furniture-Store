@@ -20,7 +20,7 @@ const ProductDetails = () => {
     getProduct();
   }, [id]);
 
-  if (!product) return <i>Loading……</i>;
+  if (!product) return <i style={{fontSize:"2rem"}}>Loading……</i>;
 
   const handleAddToCart = () => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -41,7 +41,7 @@ const ProductDetails = () => {
     localStorage.setItem("cart", JSON.stringify(storedCart));
     window.dispatchEvent(new Event('cartUpdated'));
 
-    // alert(`${quantity} x "${product.name}" added to cart!`);
+    alert(`${quantity} x "${product.name}" added to cart!`);
   };
 
   const increment = () => setQuantity(prev => prev + 1);
@@ -53,7 +53,7 @@ const ProductDetails = () => {
         <img src={product.image_path} alt={product.name} />
       </div>
       <div className="product-info">
-        <h1>{product.name}</h1>
+        <h1>{product.namee}</h1>
         <p>{product.description}</p>
         <h2>${Number(product.price).toLocaleString()}</h2>
 

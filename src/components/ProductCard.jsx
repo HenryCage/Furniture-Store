@@ -1,5 +1,4 @@
 import { useState } from "react";
-import React from "react";
 import { Link } from "react-router-dom";
 import './ProductCard.css';
 
@@ -31,6 +30,8 @@ const ProductCard = ({ product }) => {
 
 	const increment = () => setQuantity(prev => prev + 1);
 	const decrement = () => setQuantity(prev => (prev > 1 ? prev - 1 : 1));
+
+
 	return (
 		<div>
 			<Link to={`/products/${sku}`} className="product-card-link">
